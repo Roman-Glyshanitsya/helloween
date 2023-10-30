@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -33,10 +37,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -48,7 +48,11 @@ img {
 body {
     background-image: linear-gradient(#050227, #000);
     background-image: cover;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍬</text></svg>"),
+        auto;
+
 }
+
 
 
 /* container */
@@ -360,6 +364,7 @@ body {
     }
 }
 
+/* ======================= My Code =========================== */
 /* ================== My Code ====================== */
 
 /* Header */
@@ -410,18 +415,28 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
+}
+
+.frankenstein__content {
+    width: 500px;
 }
 
 .frankenstein__title {
     color: white;
     font-family: 'Nosifer', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
 }
 
 .frankenstein__img {
     width: 400px;
+    transition: all 400ms ease-in;
+}
+
+.frankenstein__img:hover {
+    transform: scale(1.5);
 }
 
 .frankenstein__text {
@@ -431,30 +446,34 @@ body {
     font-weight: 400;
 }
 
-/* Witch */
-.witch__section {
+/* dracula */
+.dracula__section {
     height: 100vh;
     background-color: linear-gradient(#000, #050227);
     padding: 30px 20px;
 
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
     gap: 40px;
 }
 
-.witch__title {
+.dracula__title {
     color: white;
     font-family: 'Nosifer', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
 }
 
-.witch__img {
+.dracula__img {
     width: 400px;
 }
 
-.witch__text {
+.dracula__content {
+    width: 700px;
+}
+
+.dracula__text {
     color: white;
     font-family: 'Amatic SC', sans-serif;
     font-size: 40px;
