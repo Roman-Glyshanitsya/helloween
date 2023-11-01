@@ -53,7 +53,119 @@ body {
 
 }
 
+/* ======================= My Code =========================== */
 
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 20px;
+}
+
+.header__logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.header__nav {
+    color: white;
+    font-family: 'Butcherman', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+    color: rgb(235, 160, 11);
+}
+
+/* Main Content */
+/* Frankenstein */
+.frankenstein__section {
+    height: 100vh;
+    background-color: linear-gradient(#000, #050227);
+    padding: 30px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.frankenstein__content {
+    width: 500px;
+}
+
+.frankenstein__title {
+    color: white;
+    font-family: 'Nosifer', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.frankenstein__img {
+    width: 400px;
+    transition: all 400ms ease-in;
+}
+
+.frankenstein__img:hover {
+    transform: scale(1.5);
+}
+
+.frankenstein__text {
+    color: white;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* dracula */
+.dracula__section {
+    height: 100vh;
+    background-color: linear-gradient(#000, #050227);
+    padding: 30px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.dracula__title {
+    color: white;
+    font-family: 'Nosifer', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.dracula__img {
+    width: 400px;
+}
+
+.dracula__content {
+    width: 700px;
+}
+
+.dracula__text {
+    color: white;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* ===================== Codepen ========================== */
 
 /* container */
 .container {
@@ -362,120 +474,4 @@ body {
     100% {
         left: 105vw;
     }
-}
-
-/* ======================= My Code =========================== */
-/* ================== My Code ====================== */
-
-/* Header */
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 20px;
-}
-
-.header__logo-img {
-    width: 100px;
-    height: 100px;
-}
-
-.header__nav {
-    color: white;
-    font-family: 'Butcherman', sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.header__nav-list {
-    display: flex;
-}
-
-.header__nav-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.header__nav-link:hover,
-.header__nav-link:focus {
-    color: rgb(235, 160, 11);
-}
-
-/* Main Content */
-/* Frankenstein */
-.frankenstein__section {
-    height: 100vh;
-    background-color: linear-gradient(#000, #050227);
-    padding: 30px 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
-.frankenstein__content {
-    width: 500px;
-}
-
-.frankenstein__title {
-    color: white;
-    font-family: 'Nosifer', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-}
-
-.frankenstein__img {
-    width: 400px;
-    transition: all 400ms ease-in;
-}
-
-.frankenstein__img:hover {
-    transform: scale(1.5);
-}
-
-.frankenstein__text {
-    color: white;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-/* dracula */
-.dracula__section {
-    height: 100vh;
-    background-color: linear-gradient(#000, #050227);
-    padding: 30px 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
-.dracula__title {
-    color: white;
-    font-family: 'Nosifer', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-}
-
-.dracula__img {
-    width: 400px;
-}
-
-.dracula__content {
-    width: 700px;
-}
-
-.dracula__text {
-    color: white;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 40px;
-    font-weight: 400;
 }
